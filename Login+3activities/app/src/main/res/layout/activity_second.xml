@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_second">
+
+
+    <TextView
+        android:text="@string/correct"
+        android:layout_width="match_parent"
+        android:layout_height="252dp"
+        android:id="@+id/textView3"
+        android:textSize="30sp"
+        android:gravity="center"/>
+
+</RelativeLayout>
