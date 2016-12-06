@@ -2,7 +2,9 @@ package com.example.verka.intents;
 
 import android.content.Intent;
 import android.net.Uri;
+import android.os.Build;
 import android.provider.MediaStore;
+import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -40,5 +42,12 @@ public class MainActivity extends AppCompatActivity {
         smsIntent.setType("vnd.android-dir/mms-sms");
         smsIntent.putExtra("sms_body","");
         startActivity(smsIntent);
+    }
+    public void ExitAll(View view){
+        System.exit(0);
+    }
+    @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
+    public void Exit(View view){
+       finishAffinity();
     }
 }
